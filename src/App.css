@@ -1,0 +1,68 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;600&family=Rubik+Glitch&display=swap');
+
+        body {
+            -webkit-animation: animateBg 100s linear infinite;
+            animation: animateBg 100s linear infinite;
+            background-image: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(#404040), color-stop(#616161), color-stop(#000000), to(#404040));
+            background-image: -o-linear-gradient(bottom, #000000, #404040, #616161, #000000, #404040);
+            background-image: linear-gradient(0deg, #000000, #404040, #616161, #000000, #404040);
+            background-size: 100% 400%;
+            color: #fff;
+            text-align: center;
+            -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+        }
+
+        @-webkit-keyframes animateBg {
+            0% {
+                background-position: 0% 100%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        @keyframes animateBg {
+            0% {
+                background-position: 0% 100%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .content {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .dyk {
+            font-family: 'Rubik Glitch', cursive;
+            font-size: 60px;
+            margin-bottom: 5px;
+        }
+
+        .fact {
+            font-family: 'Alexandria', sans-serif;
+            font-size: 19px;
+            font-weight: 600;
+
+        }
+.refresh {
+            font-family: 'Rubik Glitch', cursive;
+            font-size: 19px;
+font-weight: 900;
+cursor: pointer;
+}
