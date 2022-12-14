@@ -4,17 +4,15 @@ import { FactArray } from "./components/factArray";
 import { useState } from "react";
 
 function App() {
-  const [newFact, setNewFact] = useState(" ");
-  window.onload = function() {
-  let factNumber = Math.floor(Math.random() * FactArray.length);
-    console.log(FactArray[factNumber]);
+  const [newFact, setNewFact] = useState("Could not Autogenerate.");
+  
+  window.addEventListener("load", (event) => {
+let factNumber = Math.floor(Math.random() * FactArray.length);
     setNewFact(FactArray[factNumber]);
-    document.title = "DID YOU KNOW?";
-  }
+  });
     
   function handleClick() {
    let factNumber = Math.floor(Math.random() * FactArray.length);
-    console.log(FactArray[factNumber]);
     setNewFact(FactArray[factNumber]);
   }
 
