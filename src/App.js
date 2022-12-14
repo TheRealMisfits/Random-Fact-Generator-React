@@ -11,6 +11,7 @@ function App() {
     setNewFact(FactArray[factNumber]);
     document.title = "DID YOU KNOW?";
   }
+}
     
   function handleClick() {
    let factNumber = Math.floor(Math.random() * FactArray.length);
